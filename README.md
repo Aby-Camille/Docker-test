@@ -1,2 +1,2 @@
 # Docker-test
-Training on Docker for Devops
+Learning on using Docker for Devops
