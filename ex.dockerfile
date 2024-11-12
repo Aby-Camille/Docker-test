@@ -10,4 +10,8 @@ RUN apk add --no-cache git nodejs npm
 
 RUN git clone https://gitlab.com/docusland-courses/php/sample-laravel.git
 
-# 
+# Installer les extensions de PHP
+
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+RUN chmod +x /usr/local/bin/install-php-extensions
+RUN install-php-extensions pdo_sqlite intl zip
