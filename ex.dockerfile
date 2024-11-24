@@ -19,3 +19,8 @@ RUN install-php-extensions pdo_sqlite intl zip
 # Installer Composer pour PHP
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Définir le répertoire à l'intérieur du conteneur
+
+WORKDIR /sample-laravel
+
