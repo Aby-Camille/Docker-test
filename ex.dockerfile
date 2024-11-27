@@ -24,3 +24,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 WORKDIR /sample-laravel
 
+# Copier le contenu du répertoire actuel dans le réperttoire du conteneur
+
+COPY . /sample-laravel
