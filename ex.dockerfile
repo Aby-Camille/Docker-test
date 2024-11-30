@@ -27,3 +27,8 @@ WORKDIR /sample-laravel
 # Copier le contenu du répertoire actuel dans le réperttoire du conteneur
 
 COPY . /sample-laravel
+
+# Copier le fichier .env.example vers .env
+
+RUN cp .env.example .env
+
