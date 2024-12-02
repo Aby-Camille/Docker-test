@@ -32,3 +32,7 @@ COPY . /sample-laravel
 
 RUN cp .env.example .env
 
+# Ajouter la ligne dans le fichier .env
+
+RUN echo "DB_CONNECTION=sqlite" >> .env
+
