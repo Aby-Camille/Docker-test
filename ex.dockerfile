@@ -33,6 +33,11 @@ COPY . /sample-laravel
 RUN cp .env.example .env
 
 # Ajouter la ligne dans le fichier .env
+# Créer le fichier SQLite
+# Ajouter la configuration de la base de données dans le fichier .env
 
 RUN echo "DB_CONNECTION=sqlite" >> .env
+RUN touch storage/sample_laravel.sqlite
+RUN echo 'DB_DATABASE=/sample-laravel/storage/sample_laravel.sqlite' >> .env
+
 
