@@ -40,4 +40,10 @@ RUN echo "DB_CONNECTION=sqlite" >> .env
 RUN touch storage/sample_laravel.sqlite
 RUN echo 'DB_DATABASE=/sample-laravel/storage/sample_laravel.sqlite' >> .env
 
+# Installer les dépendances spécifiées dans le fichier composer.json
+
+RUN composer install
+
+
+
 
