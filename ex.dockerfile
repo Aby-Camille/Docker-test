@@ -44,6 +44,8 @@ RUN echo 'DB_DATABASE=/sample-laravel/storage/sample_laravel.sqlite' >> .env
 
 RUN composer install
 
+# Réinitialiser le schéma de la base de données.
 
+RUN php artisan migrate:fresh --seed
 
 
