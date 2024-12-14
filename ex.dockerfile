@@ -48,4 +48,8 @@ RUN composer install
 
 RUN php artisan migrate:fresh --seed
 
+# Installer les dépendances dans le fichier package.json et éxécuter le build
+
+RUN npm i && npm run build
+
 
