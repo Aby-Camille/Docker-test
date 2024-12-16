@@ -52,4 +52,8 @@ RUN php artisan migrate:fresh --seed
 
 RUN npm i && npm run build
 
+# Générer une clé d'application unique et ajouter au fichier .env
+
+RUN php artisan key:generate
+
 
