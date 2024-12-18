@@ -56,4 +56,8 @@ RUN npm i && npm run build
 
 RUN php artisan key:generate
 
+# Optimisation et mise en cache
+
+RUN php artisan optimize
+
 
